@@ -9,7 +9,7 @@ function App() {
   const { theme } = useTheme();
 
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div className={`min-h-screen ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
         <Navbar />
         <main className="">
