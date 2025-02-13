@@ -7,11 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "serve": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.2",
