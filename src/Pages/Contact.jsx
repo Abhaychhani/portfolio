@@ -8,8 +8,8 @@ const Contact = () => {
       id="contact"
       className={
         theme === "light"
-          ? "p-10 text-center bg-gray-300"
-          : "p-10 text-center bg-gray-700"
+          ? "p-10 text-center bg-gray-100"
+          : "p-10 text-center bg-gray-950"
       }
     >
       <h2 className="text-3xl font-semibold">Contact</h2>

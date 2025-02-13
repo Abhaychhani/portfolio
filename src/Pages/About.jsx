@@ -9,7 +9,7 @@ const About = () => {
       className={
         theme === "light"
           ? "p-10 text-center bg-gray-200"
-          : "p-10 text-center bg-gray-800"
+          : "p-10 text-center bg-gray-950"
       }
     >
       <h2 className="text-3xl font-semibold">About Me</h2>
