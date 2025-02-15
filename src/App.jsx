@@ -10,7 +10,7 @@ function App() {
 
   return (
     <Router basename="/portfolio">
-      <div className={`${theme === 'dark' ? 'bg-gray-950 text-white' : 'bg-white text-black'}`}>
+      <div className={`relative ${theme === 'dark' ? 'bg-gray-950 text-white' : 'bg-white text-black'}`}>
         <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-between items-center sticky top-0 h-16 sm:h-20 px-4 sm:px-6 md:px-12 lg:px-20 z-50 backdrop-blur-xs ${
+      className={`fixed top-0 w-full  flex justify-between items-center h-16 sm:h-20 px-4 sm:px-6 md:px-12 lg:px-20 z-50 bg-transparent backdrop-blur-xs ${
         theme === "dark" ? " text-white" : "text-black"
       }`}
     >

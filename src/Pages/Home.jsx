@@ -7,29 +7,28 @@ import { motion } from "framer-motion";
 const Home = () => {
   const { theme } = useTheme();
   return (
-    <div>
-     
-      
+    <div className="absolute top-0 w-full">
       {/* home page section */}
-      <section className="overflow-hidden flex flex-col items-center relative h-screen text-center p-4 pt-16 ">
-      <motion.div
-      animate={{
-        rotate:[0,360],
-        left:[0,"70%","70%",0,0],
-        bottom:[0,0,"70%","70%",0]
-      }}
-      transition={{
-        duration:5,
-        repeat:Infinity,
-        ease:"linear"
-      }}
-        className={`h-[30%] aspect-square bg-purple-600 absolute bottom-12 left-7 blur-2xl transition-opacity duration-300 ease-in  ${
-          theme === "light" ? "invisible opacity-0" : "visible opacity-100"
+      <section
+        className={`overflow-hidden flex flex-col justify-center items-center relative h-screen text-center p-4 ${
+          theme === "dark" ? "bg-gray-950" : "bg-white"
         }`}
-      ></motion.div>
+      >
+        <motion.div
+          animate={{
+            left: [0, "70%", "70%", 0, 0],
+            bottom: [0, 0, "70%", "70%", 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          className={`h-[30%] aspect-square bg-purple-700 absolute bottom-12 left-7 blur-3xl transition-opacity duration-300 ease-in  ${
+            theme === "light" ? "invisible opacity-0" : "visible opacity-100"
+          }`}
+        ></motion.div>
 
-
-      
         <motion.img
           src="fullimg.jpg"
           alt="Abhay"
@@ -68,20 +67,21 @@ const Home = () => {
           A Full-Stack Website Developer
         </motion.p>
         <motion.a
-        animate={{
-          top:[400,0]
-        }}
-        transition={{
-          duration:0.6,
-          delay:0.6,
-          type:"spring"
-        }}
+          animate={{
+            top: [400, 0],
+          }}
+          transition={{
+            duration: 0.6,
+            delay: 0.6,
+            type: "spring",
+          }}
           href="#contact"
           className=" relative z-10 mt-6 px-6 py-3 bg-purple-700 hover:bg-purple-800 text-white rounded-lg text-lg duration-100"
         >
           Contact Me
         </motion.a>
       </section>
+
       <About />
       <Projects />
       <Contact />
