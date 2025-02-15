@@ -3,6 +3,7 @@ import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 import { FaNodeJs, FaJs } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
+import { Link } from "react-router-dom";
 {
 }
 const Projects = () => {
@@ -20,14 +21,16 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2  mt-6 gap-6 justify-center">
           <div
-            className={`p-5  rounded-lg transition-colors duration-300 ${
+            className={`p-5  rounded-lg transition-colors duration-300 cursor-pointer ${
               theme == "light"
                 ? "bg-white text-purple-800 hover:text-white hover:bg-purple-600"
                 : "bg-purple-900  hover:bg-purple-800"
             }`}
           >
-            <h3 className="text-xl font-semibold">Project 1</h3>
-            <p className="mt-2">A short description of the project.</p>
+            <Link to="https://abhaychhani.github.io/Artify/" target="_blank">
+            <h3 className="text-xl font-semibold">Artify</h3>
+            <p className="mt-2">Artify is a simple drawing app made with canvas api in javascript.</p>
+            </Link>
           </div>
           <div
             className={`p-5  rounded-lg transition-colors duration-300 ${
