@@ -10,13 +10,11 @@ function App() {
 
   return (
     <Router basename="/portfolio">
-      <div className={`min-h-screen ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+      <div className={`${theme === 'dark' ? 'bg-gray-950 text-white' : 'bg-white text-black'}`}>
         <Navbar />
-        <main className="">
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
-        </main>
       </div>
     </Router>
   );
