@@ -39,8 +39,10 @@ const Projects = () => {
                 : "bg-purple-900  hover:bg-purple-800"
             }`}
           >
-            <h3 className="text-xl font-semibold">Project 2</h3>
-            <p className="mt-2">A short description of the project.</p>
+            <Link to="https://abhaychhani.github.io/Todo_with_javascript/" target="_blank">
+            <h3 className="text-xl font-semibold">A Todo App</h3>
+            <p className="mt-2">this is a basic todo app</p>
+            </Link>
           </div>
           {/* <div className="p-5 bg-white rounded-lg hover:bg-purple-500 transition-colors duration-300">
             <h3 className="text-xl font-semibold">Project 2</h3>
